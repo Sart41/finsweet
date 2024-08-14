@@ -1,5 +1,6 @@
 .pagemedia {
-  & > header {
-    background-color: var(--color-green-tertiary);
+  --color-currentHeader: var(--color-green-tertiary);
+  & > header::after {
+    background-color: var(--color-currentHeader);
   }
 }

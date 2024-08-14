@@ -1,5 +1,8 @@
 .pagecontacts {
-  header {
-    background-color: var(--color-light);
+  // --color-currentHeader: red;
+  --color-currentHeader: var(--color-light);
+
+  header::after {
+    background-color: var(--color-currentHeader);
   }
 }

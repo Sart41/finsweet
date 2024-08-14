@@ -10,7 +10,7 @@
     align-items: flex-start;
     justify-content: space-between;
 
-    padding-block: 48px;
+    padding-block: calcValue(48, 96, 768);
 
     @media (max-width: 767.98px) {
       flex-wrap: wrap;

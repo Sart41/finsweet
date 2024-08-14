@@ -11,7 +11,6 @@
   justify-content: center;
 
   transition: left 0.3s ease;
-
   & li {
     position: relative;
     // width: 100%;
@@ -93,7 +92,6 @@
   flex-direction: column;
 
   min-width: 140px;
-  // min-width: max-content;
 
   opacity: 0;
   background-color: #fff;
@@ -175,8 +173,7 @@
 
     font-size: 24px;
 
-    background-color: var(--color-white);
-
+    background-color: var(--color-currentHeader);
     &:not(.isActive) {
       left: 100%;
     }

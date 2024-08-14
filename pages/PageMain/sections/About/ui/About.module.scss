@@ -2,7 +2,6 @@
 @use '/src/app/styles/functions' as *;
 
 .root {
-  margin-block: 48px;
   .inner {
     display: flex;
     gap: 20px;
@@ -29,7 +28,7 @@
     margin-top: 0;
   }
   .description {
-    margin-bottom: 48px;
+    margin-bottom: calcValue(24, 48, 768);
   }
   .image {
     img {

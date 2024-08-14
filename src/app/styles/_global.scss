@@ -40,7 +40,12 @@ body {
 }
 
 section:where(:not(:first-child)) {
-  padding-block: 48px;
+  // padding-block: 48px;
+  // margin-bottom: 96px;
+}
+
+section {
+  margin-bottom: calcValue(48, 96, 768);
 }
 
 //screnn reader only

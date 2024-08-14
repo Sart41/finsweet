@@ -13,7 +13,6 @@
 
     // max-width: 631px;
     height: 384px;
-    margin-block-start: 48px;
 
     background: var(--bgImg) center / cover no-repeat;
     &::after {
@@ -96,4 +95,7 @@
 .popupContent {
   max-width: toRem(640);
   padding: calcValue(16, 48, 474);
+  .description {
+    margin-bottom: 32px;
+  }
 }

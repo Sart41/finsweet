@@ -3,7 +3,6 @@
 @use '/src/app/styles/mixins' as *;
 
 .participation {
-  margin-block: calcValue(24, 48, 474);
   .inner {
     display: flex;
     gap: 24px;

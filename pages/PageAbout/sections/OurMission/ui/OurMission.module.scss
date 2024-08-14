@@ -1,9 +1,10 @@
 @use '/src/app/styles/mixins' as *;
+@use '/src/app/styles/functions' as *;
 
 .ourmission {
+  padding-block: calcValue(48, 96, 768);
   background-color: var(--color-green-tertiary);
   .wrapper {
-    margin-bottom: 48px;
   }
   .container {
     display: flex;

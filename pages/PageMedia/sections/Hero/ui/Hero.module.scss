@@ -3,7 +3,8 @@
 @use '/src/app/styles/mixins' as *;
 
 .hero {
-  margin-top: calcValue($headerHeight, $headerHeight + 96, 767.98);
+  padding-block-start: calcValue($headerHeight + 48, $headerHeight + 96, 767.98);
+  padding-block-end: calcValue(48, 96, 768);
   background-color: var(--color-green-tertiary);
 
   .inner {

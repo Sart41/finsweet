@@ -1,16 +1,28 @@
+@use '/src/app/styles/functions' as *;
+
 .features {
-  margin-block: 48px;
+  padding-block: calcValue(48, 96, 768);
   background-color: var(--color-green-tertiary);
   .inner {
-    padding-block: 48px;
   }
   .title {
     margin-bottom: 64px;
   }
   ul {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     flex-wrap: wrap;
     gap: 48px 24px;
+
+    margin: 0;
+    padding: 0;
+
     list-style: none;
+    @media (width < 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (width < 768.98px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }

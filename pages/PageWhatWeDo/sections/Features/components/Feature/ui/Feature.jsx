@@ -11,7 +11,9 @@ export const Feature = (props) => {
       <div class={cx(styles.body)}>
         <h3 class={cx(styles.title)}>{title}</h3>
         <div class={cx(styles.description)}>
-          {text}
+          <p>
+            {text}
+          </p>
         </div>
       </div>
     </div>

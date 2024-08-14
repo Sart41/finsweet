@@ -3,5 +3,10 @@
 @use '/src/app/styles/mixins' as *;
 
 .pagedonation {
+  --color-currentHeader: var(--color-green-tertiary);
+
   padding-top: var(--header-height);
+  header::after {
+    background-color: var(--color-currentHeader);
+  }
 }
