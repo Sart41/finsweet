@@ -1,0 +1,40 @@
+@use '/src/app/styles/functions' as *;
+@use '/src/app/styles/mixins' as *;
+@use '/src/app/styles/variables' as *;
+
+.hero {
+  margin-top: calcValue($headerHeight, $headerHeight + 96, 767.98);
+  .container {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+
+    @include tablets {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  .inner {
+  }
+  .body {
+    max-width: 594px;
+    padding-left: calcValue(0, 96, 767.98);
+  }
+  .title {
+    margin-block: calcValue(24, 32, 474);
+  }
+  .image {
+    height: auto;
+    img {
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    @include tablets {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

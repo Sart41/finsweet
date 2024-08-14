@@ -1,0 +1,50 @@
+@use '/src/app/styles/functions' as *;
+@use '/src/app/styles/mixins' as *;
+
+.blogpost {
+  container-type: inline-size;
+
+  .card {
+    display: grid;
+    grid-template-columns: 192px minmax(240px, 1fr);
+    gap: 1.5rem;
+
+    color: currentColor;
+    text-decoration: none;
+  }
+
+  @container (width < 400px) {
+    .card {
+      grid-template-columns: 1fr;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  @include hover {
+    .image {
+      scale: 1.1;
+    }
+  }
+  .image {
+    transition: scale 0.3s ease;
+    img {
+      border-radius: 8px;
+    }
+  }
+  .content {
+    flex-shrink: 2;
+    max-width: 296px;
+  }
+  .title {
+    margin: calcValue(0, 20, 992) 0 8px;
+    font-size: clamp(1.25rem, 5cqi, 2.5rem);
+    // font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+
+    @media (width < 991.98px) {
+      line-height: 1.2;
+    }
+  }
+}

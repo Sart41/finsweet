@@ -1,0 +1,55 @@
+@use '/src/app/styles/mixins' as *;
+
+.root {
+  position: relative;
+
+  overflow: hidden;
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+
+  width: 56px;
+  height: 56px;
+  margin-block-start: 32px;
+
+  background-color: var(--color-white);
+  border-radius: 100%;
+
+  // svg {
+  //   position: relative;
+  //   left: 0%;
+  // }
+
+  @include hover {
+    & svg {
+      position: relative;
+      // animation: 2s ease-in arrow infinite;
+      animation: 2s cubic-bezier(0.68, -0.87, 0.42, 1.02) arrow infinite;
+      animation-play-state: running;
+
+      // animation-delay: 1s;
+    }
+  }
+}
+
+@keyframes arrow {
+  0% {
+    left: 0%;
+  }
+  // 30% {
+  //   left: 30%;
+  // }
+  50% {
+    left: 70%;
+  }
+  51% {
+    left: -90%;
+  }
+  70% {
+    left: 0%;
+  }
+  100% {
+    left: 0%;
+  }
+}

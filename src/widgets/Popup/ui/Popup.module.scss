@@ -1,0 +1,46 @@
+@use '/src/app/styles/functions' as *;
+@use '/src/app/styles/variables' as *;
+@use '/src/app/styles/mixins' as *;
+
+.popup {
+  padding: 0;
+  background-color: var(--color-white);
+  border-radius: 8px;
+  &::backdrop {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+.btnWrapper {
+  display: flex;
+  justify-content: end;
+}
+.closeBtn {
+  position: relative;
+  top: 24px;
+  right: 24px;
+
+  aspect-ratio: 1;
+  width: 32px;
+
+  background-color: var(--color-dark);
+  &::after,
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: var(--color-white);
+  }
+  &:after {
+    rotate: 45deg;
+  }
+  &::before {
+    rotate: -45deg;
+  }
+}

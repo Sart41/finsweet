@@ -1,0 +1,11 @@
+.subtitle {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-text);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}

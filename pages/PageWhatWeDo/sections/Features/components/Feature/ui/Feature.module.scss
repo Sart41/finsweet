@@ -1,0 +1,23 @@
+.feature {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  max-width: 384px;
+  .icon {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+
+    width: 28px;
+    height: 28px;
+
+    background-color: var(--color-green-primary);
+    border-radius: 4px;
+    svg * {
+      fill: var(--color-green-tertiary);
+    }
+  }
+}

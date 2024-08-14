@@ -1,0 +1,42 @@
+@use '/src/app/styles/mixins' as *;
+@use '/src/app/styles/functions' as *;
+
+.hero {
+  background-color: var(--color-green-tertiary);
+  .inner {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding-block: calcValue(24, 96, 474);
+
+    @media (max-width: 767.98px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  .body {
+    max-width: 704px;
+    margin-top: 32px;
+    padding-inline-start: calcValue(0, 96, 474, 1024);
+  }
+
+  .h2 {
+    display: flex;
+    gap: 0 24px;
+  }
+  .h3 {
+    margin-top: 0;
+  }
+
+  .description {
+    margin-bottom: 48px;
+  }
+
+  .image {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+}

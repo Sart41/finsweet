@@ -1,0 +1,69 @@
+@use '/src/app/styles/mixins' as *;
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+
+  max-width: 768px;
+  margin-inline: auto;
+  div:nth-child(5) {
+    grid-column: 1 /-1;
+  }
+
+  @include tablets {
+    grid-template-columns: 1fr;
+  }
+}
+
+.textarea {
+  resize: none;
+
+  width: 100%;
+  padding: 20px;
+
+  color: var(--color--text-primary);
+
+  border: 2px solid var(--color-border);
+  border-radius: 4px;
+  &:focus {
+    border: 2px solid var(--color-green-primary);
+    outline: none;
+  }
+
+  @include hover {
+    border: 2px solid var(--color-green-primary);
+  }
+  &:focus-visible {
+    // outline: 4px dashed blue;
+  }
+}
+
+.input {
+  height: 38px;
+  padding: 0;
+  padding-inline-start: 6px;
+
+  color: var(--color--text-primary);
+
+  border: none;
+  border-bottom: 2px solid var(--color-border);
+
+  &::placeholder {
+    line-height: 160%;
+    color: currentColor;
+  }
+
+  &:focus {
+    border-bottom: 2px solid var(--color-green-primary);
+    outline: none;
+  }
+
+  @include hover {
+    border-bottom: 2px solid var(--color-green-primary);
+  }
+
+  &:focus-visible {
+    // outline: 4px dashed blue;
+  }
+}

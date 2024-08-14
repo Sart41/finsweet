@@ -1,0 +1,1 @@
+export { OurJourney } from './ui/OurJourney.jsx'

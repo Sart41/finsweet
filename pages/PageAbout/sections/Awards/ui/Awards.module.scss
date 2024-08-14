@@ -1,0 +1,13 @@
+.awards {
+  .title {
+    margin-block-end: 48px;
+    font-size: 48px;
+    text-align: center;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(121px, max-content));
+    gap: 24px;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,37 @@
+@use '/src/app/styles/mixins' as *;
+
+.root {
+  max-width: 302px;
+
+  @include hover {
+    img {
+      scale: 1.1;
+    }
+  }
+  .img {
+    overflow: hidden;
+    aspect-ratio: 302/192;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  img {
+    scale: 1;
+    margin-bottom: 16px;
+    transition: scale 0.2s ease;
+  }
+  .title {
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color-text-primary);
+  }
+  .description {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-text-secondary);
+  }
+  a {
+    text-decoration: none;
+  }
+}

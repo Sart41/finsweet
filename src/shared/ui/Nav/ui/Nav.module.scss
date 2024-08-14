@@ -1,0 +1,28 @@
+@use '/src/app/styles/functions' as *;
+.nav {
+  display: flex;
+  gap: calcValue(10, 40, 400);
+  align-items: center;
+}
+.link {
+  z-index: 5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 115px;
+  height: 51px;
+  padding-inline: 16px;
+
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+
+  background-color: var(--color-text-primary);
+  border-radius: 4px;
+  &:focus-visible {
+    outline: 6px blue dashed;
+    outline-offset: 3px;
+  }
+}

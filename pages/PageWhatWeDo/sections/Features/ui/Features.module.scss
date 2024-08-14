@@ -1,0 +1,16 @@
+.features {
+  margin-block: 48px;
+  background-color: var(--color-green-tertiary);
+  .inner {
+    padding-block: 48px;
+  }
+  .title {
+    margin-bottom: 64px;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+    list-style: none;
+  }
+}

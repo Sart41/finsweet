@@ -1,0 +1,20 @@
+@use '/src/app/styles/mixins' as *;
+@use '/src/app/styles/functions' as *;
+
+.root {
+  @include reset-button;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 64px;
+  padding-inline: calcValue(24, 32, 474);
+
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-dark);
+
+  background-color: var(--color-white);
+  border-radius: 4px;
+}

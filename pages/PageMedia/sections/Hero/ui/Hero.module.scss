@@ -1,0 +1,53 @@
+@use '/src/app/styles/functions' as *;
+@use '/src/app/styles/variables' as *;
+@use '/src/app/styles/mixins' as *;
+
+.hero {
+  margin-top: calcValue($headerHeight, $headerHeight + 96, 767.98);
+  background-color: var(--color-green-tertiary);
+
+  .inner {
+    display: grid;
+    grid-template-columns: minmax(50%, 1fr) minmax(392px, 1fr);
+    gap: 24px;
+    justify-content: space-between;
+
+    @media (width < 768px) {
+      grid-template-columns: 1fr;
+      gap: 32px;
+      justify-content: center;
+    }
+  }
+  .content {
+    flex-basis: auto;
+  }
+  .body {
+    max-width: 500px;
+    margin-top: 32px;
+    margin-inline-start: calcValue(0, 96, 767);
+  }
+
+  .title {
+    margin-bottom: 16px;
+  }
+
+  .description {
+    margin-bottom: 32px;
+  }
+
+  .blogs {
+    flex: 0 0 auto;
+    background-color: var(--color-white);
+    border-radius: 12px;
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      margin: 0;
+      padding: 24px;
+
+      list-style: none;
+    }
+  }
+}

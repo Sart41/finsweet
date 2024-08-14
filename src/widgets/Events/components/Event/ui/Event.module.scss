@@ -1,0 +1,78 @@
+@use '/src/app/styles/functions' as *;
+
+.event {
+  container-type: inline-size;
+
+  max-width: 628px;
+  min-height: 191px;
+
+  background-color: var(--color-green-secondary);
+  border-radius: 8px;
+
+  @container (width <= 400px) {
+    a {
+      display: none;
+    }
+  }
+  .inner {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+
+    padding-block: 32px;
+    padding-inline: calcValue(16, 40, 474, 767.98);
+
+    color: currentColor;
+    text-decoration: none;
+  }
+  time {
+    display: flex;
+    flex-direction: column;
+
+    margin-block-start: -8px;
+
+    font-size: 48px;
+    font-size: calcValue(32, 48, 474, 992);
+    font-weight: 500;
+    line-height: 1.2;
+    span {
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+  }
+  .body {
+    margin-right: auto;
+  }
+  .subtitle {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 10px;
+    &::after {
+      content: '';
+      width: 44px;
+      height: 2px;
+      background-color: var(--color-dark);
+    }
+    span {
+      flex-shrink: 0;
+      font-weight: 500;
+      line-height: 1;
+      text-transform: uppercase;
+
+      @media (max-width: 474.98px) {
+        font-size: 14;
+      }
+    }
+  }
+  .title {
+    margin-top: 0;
+    line-height: 1.5;
+  }
+
+  // @media (max-width: 767.98px) {
+  //   a {
+  //     display: none;
+  //   }
+  // }
+}

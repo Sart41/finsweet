@@ -1,0 +1,17 @@
+@use '/src/app/styles/functions' as *;
+@use '/src/app/styles/variables' as *;
+@use '/src/app/styles/mixins' as *;
+
+.formItem {
+  display: flex;
+  flex-direction: column;
+
+  .label {
+    font-size: toRem(12);
+    font-weight: 700;
+    line-height: 160%;
+    color: var(--color--text-primary);
+
+    opacity: 0.6;
+  }
+}

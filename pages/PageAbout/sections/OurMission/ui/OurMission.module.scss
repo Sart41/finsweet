@@ -1,0 +1,28 @@
+@use '/src/app/styles/mixins' as *;
+
+.ourmission {
+  background-color: var(--color-green-tertiary);
+  .wrapper {
+    margin-bottom: 48px;
+  }
+  .container {
+    display: flex;
+    gap: 32px 24px;
+    margin-bottom: 96px;
+
+    @include tablets {
+      flex-direction: column;
+    }
+  }
+  .item {
+  }
+  .subtitle {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+  }
+  .title {
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+}

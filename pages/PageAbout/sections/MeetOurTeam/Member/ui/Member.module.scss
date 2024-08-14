@@ -1,0 +1,53 @@
+@use '/src/app/styles/mixins' as *;
+@use '/src/app/styles/functions' as *;
+
+.member {
+  max-width: 296px;
+  font-weight: 500;
+  line-height: 160%;
+  text-align: center;
+
+  .image {
+    overflow: hidden;
+    margin-bottom: 16px;
+    border-radius: 8px;
+  }
+  .title {
+    margin-bottom: 8px;
+    font-size: 20px;
+  }
+  .occupation {
+    display: inline-block;
+    margin-bottom: 16px;
+    font-size: 12px;
+    color: rgb(0 0 0 / 60%);
+  }
+  .social {
+    display: flex;
+    gap: toRem(16);
+    justify-content: center;
+    list-style: none;
+    a {
+      display: inline-flex;
+      align-items: center;
+      height: 44px;
+      padding-inline: 10px;
+
+      @include hover {
+        svg {
+          fill: var(--color-green-primary);
+        }
+      }
+    }
+    svg {
+      fill: var(--color-text-primary);
+    }
+
+    @include tablets {
+      gap: 34px;
+      a {
+        padding: 14px;
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.awarditem {
+  max-width: fit-content;
+  .image {
+    position: relative;
+    margin-bottom: 16px;
+    img {
+      margin-inline: auto;
+    }
+  }
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+
+    max-width: 50px;
+    max-height: 48px;
+
+    fill: var(--color-green-primary);
+  }
+  .body {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+  }
+  .date {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 160%;
+  }
+  .title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 160%;
+  }
+  .location {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 160%;
+    color: var(--color-text-primary);
+    text-transform: uppercase;
+  }
+}
