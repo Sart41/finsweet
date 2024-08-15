@@ -16,7 +16,7 @@ export const Hero = () => {
             <Link
               text='What we do'
               mode='secondary'
-              path='/pages/PageWhatWeDo/'
+              path='/finsweet/pages/PageWhatWeDo/'
             />
             <ButtonPlay />
           </div>

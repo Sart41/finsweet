@@ -15,7 +15,7 @@ export const Event = (props) => {
 
   return (
     <div class={cx(styles.event)} >
-      <a class={cx(styles.inner)} href='#'>
+      <a class={cx(styles.inner)} href='#!'>
         <time datetime={`${formatedDate}`}>{day} <span>{monthStr}</span></time>
         <div class={cx(styles.body)}>
           <div class={cx(styles.subtitle)}> <span>next events</span></div>
