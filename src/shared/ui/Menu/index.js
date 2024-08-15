@@ -11,9 +11,6 @@ const initMenu = () => {
     if (firstLevelMenus.length) {
       firstLevelMenus.forEach((menuElement) => {
         new Menu(menuElement, 1)
-        // new TestMenu(menuElement)
-        // console.log(new TestMenu(menuElement));
-        // menuElement.querySelector("a").tabIndex = "0"
       })
     }
   });

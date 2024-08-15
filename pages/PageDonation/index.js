@@ -1,4 +1,4 @@
-// export { PageDonation } from './ui/PageDonation.jsx'
+export { PageDonation } from './ui/PageDonation.jsx'
 
 import { PageDonation } from './ui/PageDonation.jsx'
 import '/src/app/index.scss'

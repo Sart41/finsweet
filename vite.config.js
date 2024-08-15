@@ -68,7 +68,7 @@ const unfontsConfig = {
 
 
 export default defineConfig({
-  // base: '/finsweet/',
+  base: '/finsweet/',
   esbuild: {
     jsxFactory: 'factory',
     jsxInject: 'import {factory} from "/src/shared/factory.js"',

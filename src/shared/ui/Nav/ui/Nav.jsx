@@ -1,7 +1,7 @@
 import { Menu } from '../../Menu'
 import { Button } from '../../buttons/Button'
 import { ButtonBurger } from '../../buttons/ButtonBurger'
-
+import { Link } from '../../Link/'
 import styles from './Nav.module.scss'
 import cx from 'classnames'
 
@@ -9,12 +9,7 @@ export const Nav = () => {
   return (
     <nav class={cx(styles.nav)}>
       <Menu />
-      <a class={cx(styles.link)} href="/pages/PageDonation/">Donate</a>
-      {/* <Button
-        mode="dark"
-        text='Donate'
-        className="headerBtn"
-      /> */}
+      <Link text='Donate' path='/finsweet/pages/PageDonation/' className={styles.link} />
       <ButtonBurger />
     </nav>
   )
