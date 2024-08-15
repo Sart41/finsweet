@@ -9,7 +9,7 @@ export const Nav = () => {
   return (
     <nav class={cx(styles.nav)}>
       <Menu />
-      <Link text='Donate' path='/pages/PageDonation/' className={styles.link} />
+      <Link text='Donate' path='/finsweet/pages/PageDonation/' className={styles.link} />
       <ButtonBurger />
     </nav>
   )
