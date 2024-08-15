@@ -70,7 +70,7 @@
 }
 
 .link[aria-expanded='true'] svg {
-  transform: rotate(200grad);
+  transform: rotate(180deg);
 }
 
 .link:where([aria-expanded='true']) .chevrone {

@@ -32,7 +32,7 @@ export const CTA = () => {
             />
             <Link
               text='Donate'
-              path='/finsweet/pages/PageDonation/'
+              path='/pages/PageDonation/'
               mode='secondary'
               className={styles.link}
             />

@@ -1,3 +1,4 @@
+import cx from 'classnames';
 import styles from './PageMain.module.scss'
 import { Button } from '../../../src/shared/ui/buttons/Button'
 import { Header } from '../../../src/widgets/Header'
@@ -12,13 +13,9 @@ import { Events } from '../../../src/widgets/Events/'
 import { Footer } from '../../../src/widgets/Footer/'
 
 
-
-
-
-
 export const PageMain = () => {
   return (
-    <div class='wrapper'>
+    <div class={cx(styles.wrapper, 'wrapper')}>
       <Header />
       <main>
         <Hero />

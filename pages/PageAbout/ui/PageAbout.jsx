@@ -15,7 +15,7 @@ import { Events } from '/src/widgets/Events/'
 
 export const PageAbout = () => {
   return (
-    <div class={cx('wrapper')}>
+    <div class={cx(styles.about, 'wrapper')}>
       <Header />
       <main>
         <About />

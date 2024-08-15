@@ -9,9 +9,9 @@
   justify-content: space-between;
 
   width: 100%;
-  min-height: 67px;
+  min-height: 75px;
 
-  background-color: var(--color-white);
+  background-color: var(--color-currentHeader);
   .container {
     display: flex;
     align-items: center;
@@ -31,6 +31,6 @@
     width: 100%;
     height: 75px;
 
-    background-color: white;
+    background-color: var(--color-currentHeader);
   }
 }
